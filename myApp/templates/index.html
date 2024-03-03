@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ekim FullStack Grubu</h1>
+    {% for i in urunler %}
+        <h3>{{i.urunAdi}}</h3>
+        <p>{{i.urunAciklamasi}}</p>
+        <a href="{% url 'detay' i.id %}">Detaya Git</a>
+    {% endfor %}
+    
+</body>
+</html>
